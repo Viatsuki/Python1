@@ -1,0 +1,20 @@
+filename = "D:/file01.txt"
+try:
+  file = open(filename,'a')
+  file.write("m001;anna"+"\n")
+  file.write("m002;Anan"+"\n")
+  file.close()
+ except IOError as e:
+  print(e)
+  
+  try:
+  with open(path, 'r') as file:
+        readmsg = file.readlines()
+        result = []
+        for data in readmsg:
+          result.append(data.rstrip("\n"))
+        for msg in result:
+          print(msg)
+        file.close()
+        except IOError as e:
+        print (e)
